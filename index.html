@@ -1,0 +1,131 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<title>Find your Music</title>
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title></title>
+    <meta name="keywords" content="" />
+    <meta name="description" content="" />
+    <link href="http://fonts.googleapis.com/css?family=Source+Sans+Pro:200,300,400,600,700,900" rel="stylesheet" />
+    <link href="default.css" rel="stylesheet" type="text/css" media="all" />
+    <link href="fonts.css" rel="stylesheet" type="text/css" media="all" />
+    <script src="jquery-3.2.1.min.js"></script>
+
+
+    <!--[if IE 6]><link href="default_ie6.css" rel="stylesheet" type="text/css" /><![endif]-->
+
+</head>
+
+<body>
+    <div id=cartoon>
+        <!--頁首-->
+        <div id="header-wrapper">
+            <div id="header" class="container">
+                <div id="logo">
+                    <h1><a href="#">Find your Music</a></h1>
+                </div>
+
+            </div>
+        </div>
+        <!--引導字幕-->
+        <div id="header-featured">
+            <img src="images/首頁字.png">
+            <div id="subtitle">
+                <img src="images/subtitle.png" style="text-align: right">
+            </div>
+
+        </div>
+        <!--引導字幕註解-->
+        <div id="banner-wrapper">
+            <div id="banner" class="container">
+                <h4>休息時、行進時、工作時，生活總需要一些音樂來調劑並療癒自己。在這裡，我選了一些適合不同心境與情境的歌。一起來找出最適合現在的音樂吧！</h4>
+            </div>
+        </div>
+
+        <div id="wrapper">
+            <!--選擇狀態區域-->
+            <div id="activity">
+                <h1 style="text-align: left"> 我目前的狀態...
+                    <a id='status_one'></a>
+                </h1>
+                <div id=activity-list>
+
+                    <ul>
+
+                        <li onclick="go(1,'工作中')"><img src="icon/work.png" alt="工作中"></li>
+
+                        <li onclick="go(2,'行進中')"><img src="icon/walk.png" alt="行進中"></li>
+
+                        <li onclick="go(3,'休息中')"><img src="icon/rest.png" alt="休息中"></li>
+
+                    </ul>
+                </div>
+
+
+            </div>
+            <!--選擇心情區域-->
+            <div id="mood">
+
+                <h1 style="text-align: left"> 我目前的心情...
+                    <a id='status_two'></a>
+                </h1>
+
+                <div id=mood-list>
+
+                    <ul>
+
+                        <li onclick="goo(1,'歡喜')"><img src="icon/happy.png" alt="歡喜"></li>
+
+                        <li onclick="goo(2,'憂愁')"><img src="icon/sad.png" alt="憂愁"></li>
+
+                        <li onclick="goo(3,'憤慨')"><img src="icon/angry.png" alt="憤慨"></li>
+
+                    </ul>
+
+                </div>
+
+
+
+            </div>
+            <!--選擇選擇區域-->
+            <div id="choice">
+                <h1 style="text-align: left"> 我想要...
+                    <a id='status_three'></a>
+                </h1>
+
+                <div id=choice-list>
+                    <ul>
+
+                        <li onclick="gooo(1,'進入這個情緒')"><img src="icon/remain.png" alt="進入這個情緒"></li>
+
+
+                        <li onclick="gooo(2,'改變這個情緒')"><img src="icon/change.png" alt="改變這個情緒"></li>
+
+
+                    </ul>
+
+                </div>
+
+                <!--開始按鈕-->
+            </div>
+            <div id=startarea>
+                <h1 style="text-align: left">點擊START，開啟音樂旅程！</h1>
+                <div id=start-button><img onclick="final()" src="./icon/start.png"> </div>
+            </div>
+        </div>
+        <div id="music">
+            <h1>你可以聽聽...</h1>
+        </div>
+    </div>
+</body>
+<!--頁尾-->
+<footer>
+    <div id="copyright" class="container">
+        <p>&copy; Untitled. All rights reserved. | Design by <a href="http://templated.co" rel="nofollow">LING, LI</a>.</p>
+    </div>
+</footer>
+<script src="./index.js"></script>
+
+</html>
